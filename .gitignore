@@ -31,3 +31,5 @@ codegen/
 
 # Octave session info
 octave-workspace
+
+prj_path_list.mat
