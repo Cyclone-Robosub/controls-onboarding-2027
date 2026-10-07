@@ -7,7 +7,7 @@ descriptor of which wall was collided with.
 %}
 
 %initial
-status = true;
+status = false;
 wall_desc = "None";
 
 %a collision = true if bot is OUTSIDE the frame or INSIDE the barrier
