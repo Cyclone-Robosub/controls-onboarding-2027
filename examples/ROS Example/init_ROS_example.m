@@ -6,7 +6,7 @@ clear results
 x0 = [0;0];
 
 % Target
-x_u = 1;
+x_u = 3;
 
 % Constants
 b = 1;
