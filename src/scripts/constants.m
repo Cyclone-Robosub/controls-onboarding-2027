@@ -24,7 +24,7 @@ B = [0 0 0;...
     0 0 0;...
     0 0 1/I];
 
-%pack into a paramater structure to reduce workspace clutter
+%pack into a parameter structure to reduce workspace clutter
 P.A = A;
 P.B = B;
 clear A B m I bx by bpsi

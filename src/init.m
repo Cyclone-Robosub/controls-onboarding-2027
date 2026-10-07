@@ -10,7 +10,7 @@ scene = standard_scene;
 Create the bus + struct pair needed to use cell arrays (like scene) inside
 Simulink. 
 
-As a helpful tip, the helper function viewBus(scene_bus) let's you see the
+As a helpful tip, the helper function viewBus(scene_bus) lets you see the
 fields inside an existing bus in the Command Window. You can verify that
 the structure fields, types, and sizes of scene_struct match the contents
 of scene_bus.
@@ -21,10 +21,12 @@ scene_struct = sceneToStruct(scene);
 %% ROS Msg Setup
 % Run once for setup, or whenever the msg definitions in custom_interfaces
 % are changed.
+
+%HI DONT FORGET ME
 % ros2genmsg(prj_path_list.assets_path);
 
 % A helpful function to inspect msg contents
-% getCustomRosBus("Sensors");
+getCustomRosBus("Sensors");
 %% Load Constants
 run("constants.m")
 
@@ -40,7 +42,7 @@ X0 = [ri0;dri0;yaw0;dyaw0];
 tspan = 10; %(s)
 dt_sim = 0.001; %(s), simulation fundamental timestep
 dt_data = roundToSimTimestep(1/30, dt_sim); %rate for saving data to plot
-dt_control = roundToSimTimestep(1/100, dt_sim); %update rate for controller
+dt_ctrl = roundToSimTimestep(1/100, dt_sim); %update rate for controller
 
 results = sim("bot_sim.slx");
 
