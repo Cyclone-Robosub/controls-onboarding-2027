@@ -30,7 +30,7 @@ run("constants.m")
 
 %% Initial Conditions
 ri0 = [0.5 3]'; %position (m)
-dri0 = [0 0]'; %velocity (m/s)
+dri0 = [0 0]'; %velocity (m/s)  
 yaw0 = 0; %pointing angle (rad)
 dyaw0 = 0; %angular velocity
 
@@ -48,4 +48,4 @@ results = sim("bot_sim.slx");
 plotX(results) %position, velocity, yaw, yaw rate
 plotUlts(results) %ultrasonic sensor measurements
 plotPath(scene,results) %2D trajectory
-makeBotGif(scene,results) 
+makeBotGif(scene,results)

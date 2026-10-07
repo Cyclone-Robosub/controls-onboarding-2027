@@ -12,7 +12,7 @@ ri = X(:,1:2);
 dri = X(:,3:4);
 
 figure()
-tiledlayout(3,1)
+tiledlayout(4,1)
 
 nexttile
 plot(t,ri(:,1))
@@ -39,10 +39,11 @@ ylabel("Yaw (rad)")
 title("Robot Attitude")
 legend("\psi")
 
+
 nexttile
 plot(t,X(:,6))
 xlabel("Time (s)")
 ylabel("Angular Velocity (rad/s)")
 title("Robot Angular Velocity")
-legend("$\dot{\psi}$", 'Interpreter',latex)
+legend("$\dot{\psi}$", 'Interpreter', 'latex')
 end
