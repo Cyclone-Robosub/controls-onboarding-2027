@@ -1,0 +1,182 @@
+[0.093s] Invoking command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG -G Ninja -DCMAKE_INSTALL_PREFIX=C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install
+[0.750s] -- The C compiler identification is MSVC 19.42.34436.0
+[1.093s] -- The CXX compiler identification is MSVC 19.42.34436.0
+[1.156s] -- Detecting C compiler ABI info
+[2.046s] -- Detecting C compiler ABI info - done
+[2.078s] -- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx86/x64/cl.exe - skipped
+[2.078s] -- Detecting C compile features
+[2.078s] -- Detecting C compile features - done
+[2.093s] -- Detecting CXX compiler ABI info
+[2.718s] -- Detecting CXX compiler ABI info - done
+[2.734s] -- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx86/x64/cl.exe - skipped
+[2.734s] -- Detecting CXX compile features
+[2.734s] -- Detecting CXX compile features - done
+[2.734s] -- Building for ROS 2 Jazzy
+[2.765s] -- Found ament_cmake: 2.5.2 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/ament_cmake/cmake)
+[3.546s] -- Found Python3: C:/Users/tommy/AppData/Roaming/MathWorks/MATLAB/R2026a/ros2/win64/venv/Scripts/python.exe (found version "3.10.11") found components: Interpreter 
+[3.765s] -- Found ament_cmake_ros: 0.12.0 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/ament_cmake_ros/cmake)
+[3.796s] -- Found rosidl_typesupport_c: 3.2.2 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_c/cmake)
+[3.796s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.890s] -- Found rosidl_typesupport_cpp: 3.2.2 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/cmake)
+[3.890s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.968s] -- Found rosidl_default_generators: 1.6.0 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_default_generators/cmake)
+[4.000s] -- Found rosidl_adapter: 4.8.1 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_adapter/cmake)
+[4.000s] -- Found class_loader: 2.7.0 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/class_loader/cmake)
+[4.015s] -- Found rclcpp: 28.1.3 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rclcpp/cmake)
+[4.187s] -- Found rmw_implementation_cmake: 7.3.1 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rmw_implementation_cmake/cmake)
+[4.187s] -- Found rmw_fastrtps_cpp: 9.0.0 (C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rmw_fastrtps_cpp/cmake)
+[4.312s] -- Found FastRTPS: C:/Program Files/MATLAB/sys/ros2/win64/ros2/include (Required is at least version "2.13") 
+[4.343s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.234s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.531s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.593s] -- Configuring done
+[5.765s] -- Generating done
+[5.828s] -- Build files have been written to: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces
+[5.843s] Invoked command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG -G Ninja -DCMAKE_INSTALL_PREFIX=C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install
+[5.843s] Invoking command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE --build C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces -- -j16 -l16
+[6.156s] [1/27] Generating type hashes for ROS interfaces
+[6.500s] [2/27] Generating C++ code for ROS interfaces
+[6.515s] [3/27] Generating C code for ROS interfaces
+[6.593s] [4/27] Building C object CMakeFiles\custom_interfaces__rosidl_generator_c.dir\rosidl_generator_c\custom_interfaces\msg\detail\sensors__type_support.c.obj
+[6.593s] [5/27] Building C object CMakeFiles\custom_interfaces__rosidl_generator_c.dir\rosidl_generator_c\custom_interfaces\msg\detail\sensors__description.c.obj
+[6.609s] [6/27] Building C object CMakeFiles\custom_interfaces__rosidl_generator_c.dir\rosidl_generator_c\custom_interfaces\msg\detail\sensors__functions.c.obj
+[6.859s] [7/27] Linking C shared library custom_interfaces__rosidl_generator_c.dll
+[7.218s] [8/27] Generating C++ type support dispatch for ROS interfaces
+[7.281s] [9/27] Generating C type support dispatch for ROS interfaces
+[7.296s] [10/27] Generating C type support for eProsima Fast-RTPS
+[7.312s] [11/27] Generating C introspection for ROS interfaces
+[7.328s] [12/27] Generating C++ introspection for ROS interfaces
+[7.359s] [13/27] Generating C++ type support for eProsima Fast-RTPS
+[7.421s] [14/27] Building C object CMakeFiles\custom_interfaces__rosidl_typesupport_introspection_c.dir\f0c2fa0cb9b0e3ce1b5836a5267b3fea\detail\sensors__type_support.c.obj
+[7.437s] [15/27] Building CXX object CMakeFiles\custom_interfaces__rosidl_typesupport_c.dir\rosidl_typesupport_c\custom_interfaces\msg\sensors__type_support.cpp.obj
+[7.703s] [16/27] Building CXX object CMakeFiles\custom_interfaces__rosidl_typesupport_cpp.dir\rosidl_typesupport_cpp\custom_interfaces\msg\sensors__type_support.cpp.obj
+[7.718s] [17/27] Building CXX object CMakeFiles\custom_interfaces__rosidl_typesupport_introspection_cpp.dir\5fd09a25305bfee364c153810a78567d\sensors__type_support.cpp.obj
+[7.765s] [18/27] Linking CXX shared library custom_interfaces__rosidl_typesupport_c.dll
+[7.765s] [19/27] Linking C shared library custom_interfaces__rosidl_typesupport_introspection_c.dll
+[7.812s] [20/27] Building CXX object CMakeFiles\custom_interfaces__rosidl_typesupport_fastrtps_c.dir\31955a70432c130709ef36ab640f7147\detail\sensors__type_support_c.cpp.obj
+[7.812s] cl : Command line warning D9025 : overriding '/W3' with '/W4'
+[7.890s] [21/27] Building CXX object CMakeFiles\custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir\2468f415ade9bf0dc6cf0385a29a8a6d\sensors__type_support.cpp.obj
+[7.890s] cl : Command line warning D9025 : overriding '/W3' with '/W4'
+[8.046s] [22/27] Linking CXX shared library custom_interfaces__rosidl_typesupport_introspection_cpp.dll
+[8.046s] [23/27] Linking CXX shared library custom_interfaces__rosidl_typesupport_cpp.dll
+[8.125s] [24/27] Linking CXX shared library custom_interfaces__rosidl_typesupport_fastrtps_c.dll
+[8.187s] [25/27] Linking CXX shared library custom_interfaces__rosidl_typesupport_fastrtps_cpp.dll
+[13.984s] [26/27] Building CXX object CMakeFiles\custom_interfaces_matlab.dir\src\custom_interfaces_Sensors_message.cpp.obj
+[13.984s] C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces\src\custom_interfaces_Sensors_message.cpp(28): warning C4275: non dll-interface class 'MATLABROS2MsgInterfaceBase' used as base for dll-interface class 'MATLABROS2MsgInterface<custom_interfaces::msg::Sensors>'
+[13.984s] C:\Program Files\MATLAB\toolbox\ros\include\ros2\MATLABROS2MsgInterface.hpp(18): note: see declaration of 'MATLABROS2MsgInterfaceBase'
+[13.984s] C:\Program Files\MATLAB\toolbox\ros\include\ros2\MATLABROS2MsgInterface.hpp(59): note: see declaration of 'MATLABROS2MsgInterface<custom_interfaces::msg::Sensors>'
+[13.984s] C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces\src\custom_interfaces_Sensors_message.cpp(119): warning C4275: non dll-interface class 'ROS2MsgElementInterfaceFactory' used as base for dll-interface class 'ros2_custom_interfaces_Sensors_message'
+[13.984s] C:\Program Files\MATLAB\toolbox\ros\include\ros2\MATLABROS2MsgInterface.hpp(23): note: see declaration of 'ROS2MsgElementInterfaceFactory'
+[13.984s] C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces\src\custom_interfaces_Sensors_message.cpp(119): note: see declaration of 'ros2_custom_interfaces_Sensors_message'
+[14.359s] [27/27] Linking CXX shared library custom_interfaces_matlab.dll
+[14.359s] Invoked command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE --build C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces -- -j16 -l16
+[14.500s] Invoking command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE --install C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces
+[14.531s] -- Install configuration: "Release"
+[14.531s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
+[14.531s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/msg/Sensors.json
+[14.531s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.531s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.531s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.546s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__description.c
+[14.546s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__functions.c
+[14.546s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__functions.h
+[14.546s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__struct.h
+[14.562s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__type_support.c
+[14.562s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__type_support.h
+[14.562s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[14.562s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/sensors.h
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_generator_c.lib
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_generator_c.dll
+[14.578s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.578s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.578s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__rosidl_typesupport_fastrtps_c.h
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_fastrtps_c.lib
+[14.578s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_fastrtps_c.dll
+[14.578s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.593s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.593s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__rosidl_typesupport_introspection_c.h
+[14.593s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__type_support.c
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_introspection_c.lib
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_introspection_c.dll
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_c.lib
+[14.593s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_c.dll
+[14.593s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.593s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.609s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__builder.hpp
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__struct.hpp
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__traits.hpp
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__type_support.hpp
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/sensors.hpp
+[14.609s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.609s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.609s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.609s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps
+[14.625s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__rosidl_typesupport_fastrtps_cpp.hpp
+[14.625s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.625s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_fastrtps_cpp.lib
+[14.625s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dll
+[14.625s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces
+[14.625s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg
+[14.625s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail
+[14.625s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__rosidl_typesupport_introspection_cpp.hpp
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/custom_interfaces/msg/detail/sensors__type_support.cpp
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_introspection_cpp.lib
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_introspection_cpp.dll
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces__rosidl_typesupport_cpp.lib
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces__rosidl_typesupport_cpp.dll
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/msg/Sensors.idl
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/msg/Sensors.msg
+[14.640s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include
+[14.640s] -- Up-to-date: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces
+[14.640s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/include/custom_interfaces/visibility_control.h
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/lib/custom_interfaces_matlab.lib
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/bin/custom_interfaces_matlab.dll
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m/
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros/+internal
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros/+internal/+ros2
+[14.656s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros/+internal/+ros2/+custommessages
+[14.671s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros/+internal/+ros2/+custommessages/+custom_interfaces
+[14.671s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/m//+ros/+internal/+ros2/+custommessages/+custom_interfaces/sensors.m
+[14.671s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
+[14.671s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/environment/ament_prefix_path.bat
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/environment/ament_prefix_path.dsv
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/environment/path.bat
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/environment/path.dsv
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/local_setup.bat
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/local_setup.dsv
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/package.dsv
+[14.687s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/ament_index/resource_index/packages/custom_interfaces
+[14.703s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake
+[14.703s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-release.cmake
+[14.703s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[14.703s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-release.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.718s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-release.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.734s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfacesConfig.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake
+[14.750s] -- Installing: C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install/share/custom_interfaces/package.xml
+[14.765s] Invoked command in 'C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\bin\win64\cmake\bin\cmake.EXE --install C:\Users\tommy\MATLAB\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces

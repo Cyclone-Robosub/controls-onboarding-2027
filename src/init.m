@@ -21,10 +21,10 @@ scene_struct = sceneToStruct(scene);
 %% ROS Msg Setup
 % Run once for setup, or whenever the msg definitions in custom_interfaces
 % are changed.
-% ros2genmsg(prj_path_list.assets_path);
+ros2genmsg(prj_path_list.assets_path);
 
 % A helpful function to inspect msg contents
-% getCustomRosBus("Sensors");
+getCustomRosBus("Sensors");
 %% Load Constants
 run("constants.m")
 

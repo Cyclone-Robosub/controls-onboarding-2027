@@ -1,0 +1,17 @@
+{
+  "package_name": "custom_interfaces",
+  "output_dir": "C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/rosidl_typesupport_cpp/custom_interfaces",
+  "template_dir": "C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Sensors.idl"
+  ],
+  "target_dependencies": [
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/Lib/site-packages/rosidl_typesupport_cpp/__init__.py",
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "C:/Program Files/MATLAB/sys/ros2/win64/ros2/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/Sensors.idl"
+  ]
+}

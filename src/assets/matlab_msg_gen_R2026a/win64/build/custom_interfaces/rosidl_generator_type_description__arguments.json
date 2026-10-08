@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_interfaces",
+  "output_dir": "C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/rosidl_generator_type_description/custom_interfaces",
+  "idl_tuples": [
+    "C:/Users/tommy/MATLAB/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Sensors.idl"
+  ]
+}
