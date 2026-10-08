@@ -44,5 +44,5 @@ plot(t,X(:,6))
 xlabel("Time (s)")
 ylabel("Angular Velocity (rad/s)")
 title("Robot Angular Velocity")
-legend("$\dot{\psi}$", 'Interpreter',latex)
+legend("$\dot{\psi}$", 'Interpreter','latex')
 end
