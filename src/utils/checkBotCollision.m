@@ -7,7 +7,7 @@ descriptor of which wall was collided with.
 %}
 
 %initial
-status = true;
+status = false;
 wall_desc = "None";
 
 %a collision = true if bot is OUTSIDE the frame or INSIDE the barrier
@@ -18,13 +18,13 @@ y = pos(2);
 
 
 %frame
-if(y < frame(1,2) || y > frame(2,2))
+if((y <= frame(1,2) || y >= frame(2,2)))
     status = true;
     wall_desc = "Side";
-elseif(x < frame(1,1))
+elseif(x <= frame(1,1))
     status = true;
     wall_desc = "Bottom";
-elseif(y > frame(3,1))
+elseif(x >= frame(3,1))
     status = true;
     wall_desc = "Top";
 end
@@ -41,7 +41,7 @@ if(~status) %if a collision hasn't been detected yet
         wallk = walls{k-1};
     
         %vertical
-        if(x > wallk(1,1) && x < wallk(3,1))
+        if(x < wallk(1,1) && x > wallk(3,1))
             in_vert = true;
         end
         %horizontal
