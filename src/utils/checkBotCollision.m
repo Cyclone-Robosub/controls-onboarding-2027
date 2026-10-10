@@ -18,13 +18,13 @@ y = pos(2);
 
 
 %frame
-if(x < frame(1,2) || x > frame(2,2))
+if(x < frame(1,2) || x > frame(3,1))
     status = true;
     wall_desc = "Side";
-elseif(y < frame(1,1))
+elseif(y < frame(1,2))
     status = true;
     wall_desc = "Bottom";
-elseif(y > frame(3,1))
+elseif(y > frame(3,2))
     status = true;
     wall_desc = "Top";
 end
@@ -34,14 +34,14 @@ walls = {scene.wall1, scene.wall2, scene.wall3, scene.wall4, scene.wall5, scene.
 k = 0;
 wallk = 0;
 if(~status) %if a collision hasn't been detected yet
-    for k = 2:numel(walls)
+    for k = 1:numel(walls)
         in_vert = false;
         in_horiz = false;
     
-        wallk = walls{k-1};
+        wallk = walls{k};
     
         %vertical
-        if(x > wallk(1,1) && x < wallk(3,1))
+        if(x < wallk(1,1) && x > wallk(3,1))
             in_vert = true;
         end
         %horizontal
