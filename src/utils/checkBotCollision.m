@@ -18,10 +18,10 @@ y = pos(2);
 
 
 %frame
-if(y < frame(1,2) || y > frame(2,2))
+if(x < frame(1,2) || x > frame(2,2))
     status = true;
     wall_desc = "Side";
-elseif(x < frame(1,1))
+elseif(y < frame(1,1))
     status = true;
     wall_desc = "Bottom";
 elseif(y > frame(3,1))
