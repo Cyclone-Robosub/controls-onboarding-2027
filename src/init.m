@@ -36,7 +36,7 @@ dri0 = [0 0]'; %velocity (m/s)
 yaw0 = 0; %pointing angle (rad)
 dyaw0 = 0; %angular velocity
 
-X0 = [ri0;dri0;yaw0;dyaw0];
+x0 = [ri0;dri0;yaw0;dyaw0];
 
 %% Simulation Conditions
 tspan = 10; %(s)
