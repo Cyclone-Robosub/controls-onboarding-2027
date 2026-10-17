@@ -8,6 +8,7 @@ end
 t = results.ults.Time;
 
 ults = squeeze(results.ults.Data)';
+
 d1 = ults(:,1);
 d2 = ults(:,2);
 d3 = ults(:,3);

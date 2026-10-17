@@ -11,7 +11,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
     yaw = state(3);
 
     % Constants
-    turn_limit = pi/2;
+    turn_limit = pi/3;
 
     % Persistent variables
     persistent turn_right;
@@ -43,7 +43,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
 
 
     % Check if there is an opening by seeing if there are sudden jumps in the sensor data 
-    detected_opening = false; % BUG should be detected_opening = sensor_data_derivative(2) > ... but doesn't work
+    detected_opening = prev_mid_distance - mid > 1.5;
 
     % Want to start driving if there is an opening, or keep driving if we
     % aren't close enough to the target position
