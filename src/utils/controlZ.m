@@ -3,7 +3,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
     left = sensor_data(1);
     mid = sensor_data(2);
     right = sensor_data(3);
-
+    
     % States
     x = state(1);
     y = state(2);
@@ -14,6 +14,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
     turn_limit = pi/3;
 
     % Persistent variables
+    persistent first_step;
     persistent turn_right;
     persistent prev_mid_distance;
     persistent driving;
@@ -41,9 +42,16 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
         target_yaw = 0;
     end
 
+    if isempty(first_step)
+        first_step = false;
+        err_pos = 0;
+        err_yaw = 0;
+        return
+    end
+
 
     % Check if there is an opening by seeing if there are sudden jumps in the sensor data 
-    detected_opening = prev_mid_distance - mid > 1.5;
+    detected_opening = prev_mid_distance - mid < 1.5;
 
     % Want to start driving if there is an opening, or keep driving if we
     % aren't close enough to the target position
@@ -51,7 +59,14 @@ function [err_pos, err_yaw] = controlZ(sensor_data, sensor_data_derivative, stat
         if(~driving) 
             driving = true;
             target_yaw = yaw;
-            target_pos = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y + 0.5]; % Add 0.5 to get to the middle of the opening
+            target_pos = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y];
+            % Add or subtract 0.5 to get to the middle of the opening
+            if turn_right
+                target_pos(2) = target_pos(2) + 0.5;
+            else 
+                target_pos(2) = target_pos(2) - 0.5;
+            end
+
         end
         err_yaw = target_yaw - yaw;
         err_pos = norm(target_pos - position);
