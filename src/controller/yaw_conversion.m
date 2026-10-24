@@ -4,7 +4,7 @@ function true_msg = yaw_conversion(Msg)
 x = Msg.yaw;
 x = mod(x, 2*pi);
 if(x > pi)
-    x = 2*pi - x;
+    x = x - 2*pi;
 end
 
 true_msg = Msg;
