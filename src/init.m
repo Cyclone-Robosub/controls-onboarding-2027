@@ -37,7 +37,7 @@ dyaw0 = 0; %angular velocity
 X0 = [ri0;dri0;yaw0;dyaw0];
 
 %% Simulation Conditions
-tspan = 10; %(s)
+tspan = 30; %(s)
 dt_sim = 0.001; %(s), simulation fundamental timestep
 dt_data = roundToSimTimestep(1/30, dt_sim); %rate for saving data to plot
 dt_control = roundToSimTimestep(1/100, dt_sim); %update rate for controller
