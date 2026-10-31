@@ -65,8 +65,8 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     end
 
     % Check if there is an opening by seeing if there are sudden jumps in the sensor data 
-    detected_opening = mid - prev_mid_distance > 1.5;
-
+    detected_opening = (mid - prev_mid_distance > 2) && (mid - prev_mid_distance < 6.5);
+    
     % Want to start driving if there is an opening, or keep driving if we
     % aren't close enough to the target position
     if(detected_opening || driving)
@@ -74,13 +74,15 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
             driving = true;
             target_yaw = yaw;
 
+            % Add a little bit of yaw so the target isn't right after the wall
             if turn_right
-                target_yaw = target_yaw + 0.5;
+                target_yaw = target_yaw + 0.15;
             else
-                target_yaw = target_yaw - 0.5;
+                target_yaw = target_yaw - 0.15;
             end
 
             target_pos = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y];
+
             % Add or subtract 0.5 to get to the middle of the opening
             if turn_right
                 target_pos(2) = target_pos(2) + 0.5;
@@ -92,7 +94,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
         err_yaw = target_yaw - yaw;
         err_pos = norm(target_pos - position);
 
-        if(err_yaw < 0.5 && err_pos < 1.5)
+        if(abs(err_yaw) < 0.3 && err_pos < 0.7)
             driving = false;
         end
     else
@@ -112,19 +114,23 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
             end
         end
 
-        if(prev_pos(1) == x && prev_pos(2) == y)
+        % Check if we're at the end of the course
+        if((abs(prev_pos(1) - x) <= 0.001 && abs(prev_pos(2) - y) <= 0.001) ...
+                || at_end > 700)
             at_end = at_end + 1;
         else
             at_end = 0;
         end
 
-        if(at_end > 40)
-            err_yaw = 0;
-            err_pos = 1;
-        end
-    
-        prev_pos = [x, y];
-        prev_mid_distance = mid;
     end
+
+    % If we're at the end, just move forward
+    if(at_end > 700 && mid > 2)
+        err_yaw = 0;
+        err_pos = 1;
+    end
+
+    prev_pos = [x, y];
+    prev_mid_distance = mid;
 
 end

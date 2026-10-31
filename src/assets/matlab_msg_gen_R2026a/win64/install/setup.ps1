@@ -23,7 +23,7 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "C:\Program Files\MATLAB\R2026a\sys\ros2\win64\ros2\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "C:/Users/Owner/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

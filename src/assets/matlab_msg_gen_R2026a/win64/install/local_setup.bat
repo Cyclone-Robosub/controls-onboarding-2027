@@ -62,7 +62,7 @@ goto:eof
     set "_colcon_python_executable=%COLCON_PYTHON_EXECUTABLE%"
   ) else (
     :: use the Python executable known at configure time
-    set "_colcon_python_executable=C:\Users\Owner\AppData\Roaming\MathWorks\MATLAB\R2026a\ros2\win64\venv\Scripts\python.exe"
+    set "_colcon_python_executable=C:\Users\linma\AppData\Roaming\MathWorks\MATLAB\R2026a\ros2\win64\venv\Scripts\python.exe"
     :: if it doesn't exist try a fall back
     if not exist "!_colcon_python_executable!" (
       python --version > NUL 2> NUL

@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "C:/Users/Owner/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install")
+  set(install_space "C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/install")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "C:/Users/Owner/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/install_manifest.txt")
+set(install_manifest "C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()

@@ -12,7 +12,7 @@ if ($env:COLCON_PYTHON_EXECUTABLE) {
   $_colcon_python_executable="$env:COLCON_PYTHON_EXECUTABLE"
 } else {
   # use the Python executable known at configure time
-  $_colcon_python_executable="C:\Users\Owner\AppData\Roaming\MathWorks\MATLAB\R2026a\ros2\win64\venv\Scripts\python.exe"
+  $_colcon_python_executable="C:\Users\linma\AppData\Roaming\MathWorks\MATLAB\R2026a\ros2\win64\venv\Scripts\python.exe"
   # if it doesn't exist try a fall back
   if (!(Test-Path "$_colcon_python_executable" -PathType Leaf)) {
     if (!(Get-Command "python" -ErrorAction SilentlyContinue)) {
