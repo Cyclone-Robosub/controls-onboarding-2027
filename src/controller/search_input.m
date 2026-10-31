@@ -1,4 +1,5 @@
 function input_feedback = search_input(Msg)
+% Msg = [x, y, yaw, d1, d2, d3]
 
 persistent direction
 if(isempty(direction))
@@ -6,12 +7,12 @@ if(isempty(direction))
 end 
 
 % rotate to search
-input_feedback = [0, 0.25 * direction, 1];
+input_feedback = [0; 0.25 * direction; 1];
 
 % change direction to avoid going backwards
-if(Msg.yaw > 1.5)
+if(Msg(1, 3) > 1.5)
     direction = -1;
-elseif(Msg.yaw < -1.5)
+elseif(Msg(1, 3) < -1.5)
     direction = 1;
 end
 
