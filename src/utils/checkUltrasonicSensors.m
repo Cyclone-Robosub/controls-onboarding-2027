@@ -6,8 +6,8 @@ yaw = X(5);
 
 %rotation matrix
 % rotation/translation from body -> world for this frame
-c = cosd(yaw); 
-s = sind(yaw);
+c = cos(yaw); 
+s = sin(yaw);
 Cib = [c -s; s c];
 
 %beam tail

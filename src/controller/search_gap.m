@@ -18,13 +18,13 @@ end
 if(abs(Msg(1, 5) - dist1) > 0.5)  % gap causes big jump in d2
     corner = [Msg(1, 1) + dist1 * cos(angle1), Msg(1, 2) + dist1 * sin(angle1)];
     if(Msg(1, 5) > dist1)
-        if(Msg(1, 5) > angle1)
+        if(Msg(1, 3) > angle1)
             offset = 0.5;
         else
             offset = -0.5;
         end
     else
-        if(Msg(1, 5) < angle1)
+        if(Msg(1, 3) < angle1)
             offset = 0.5;
         else
             offset = -0.5;
