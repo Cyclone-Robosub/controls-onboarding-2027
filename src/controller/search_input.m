@@ -7,7 +7,7 @@ if(isempty(direction))
 end 
 
 % rotate to search
-input_feedback = [0; 0.25 * direction; 1];
+input_feedback = [0; 1.5 * direction; 0];
 
 % change direction to avoid going backwards
 if(Msg(1, 3) > 1.5)

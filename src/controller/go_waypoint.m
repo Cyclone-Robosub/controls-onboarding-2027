@@ -1,4 +1,4 @@
-function input_feedback = go_waypoint(task_number, waypoint, Msg)
+function input_feedback = go_waypoint(task_number, waypoint, Msg, dMsg)
 % Msg = [x, y, yaw, d1, d2, d3]
 % waypoint is [x y]
 
@@ -33,20 +33,25 @@ end
 
 done = false;
 
-if(task_number == 1 && Msg(1, 5) < 1)   % going straight, stop at wall
+if(task_number == 1 && Msg(1, 5) < 1.5)   % adjust stopping distance
     done = true;
-elseif(task_number == 3 && hypot(x_diff, y_diff) < 0.1) % go to gap, stop when reached
+elseif(task_number == 3 && hypot(x_diff, y_diff) < 0.2) % go to gap, stop when reached
     done = true;
 end
 
-if(not(done))
+if(done == false)
     if(abs(Msg(1, 3) - target_yaw) > 0.1) % edit rotation tolerance
-        input_feedback = [0; 0.2 * direction; 0];
+        input_feedback = [0.5; 0.25 * direction; 0];
     else    % move forward
-        input_feedback = [1; 0; 0];
+        input_feedback = [1.25; 0; 0];
     end
 else
-    input_feedback = [0; 0; 1];
+    speed = hypot(dMsg(1, 1), dMsg(1, 2));
+    if(speed > 0.25)
+        input_feedback = [-2.5; 0; 0];  % stopping
+    else
+        input_feedback = [0; 0; 1];
+    end
 end
 
 end
