@@ -18,7 +18,7 @@ end
 % if there's a feedback
 % sequence: 1 2 3 1 2 3...
 if(F == 1)
-    if(n == 3)
+    if(n == 4)
         n = 1;
     else
         n = n + 1;
