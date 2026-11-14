@@ -7,7 +7,7 @@ descriptor of which wall was collided with.
 %}
 
 %initial
-status = true;
+status = false;
 wall_desc = "None";
 
 %a collision = true if bot is OUTSIDE the frame or INSIDE the barrier
@@ -41,7 +41,7 @@ if(~status) %if a collision hasn't been detected yet
         wallk = walls{k-1};
     
         %vertical
-        if(x > wallk(1,1) && x < wallk(3,1))
+        if(x < wallk(1,1) && x > wallk(3,1))
             in_vert = true;
         end
         %horizontal

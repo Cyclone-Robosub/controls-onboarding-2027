@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/Sensors.msg
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Position and ultrasonic sensor readings")
+    struct Sensors {
+      double x;
+
+      double y;
+
+      double yaw;
+
+      double d1;
+
+      double d2;
+
+      double d3;
+    };
+  };
+};

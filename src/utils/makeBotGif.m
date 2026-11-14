@@ -36,7 +36,7 @@ yaw = X(:,5);
 
 %timestep
 dt = t(2)-t(1);
-nFrames = length(t);
+nFrames = length(t)
 frameArray = cell(1,nFrames);
 
 %Start printout percentage

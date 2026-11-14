@@ -1,0 +1,142 @@
+[0.859s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['C:\\Users\\andre\\AppData\\Roaming\\MathWorks\\MATLAB\\R2026a\\ros2\\win64\\venv\\Scripts\\colcon', 'build', '--merge-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG', '-G', 'Ninja'][0m
+[0.860s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG', '-G', 'Ninja'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x000001DFCB9CC880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x000001DFCB8F13F0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x000001DFCB8F13F0>>)[0m
+[0.979s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.979s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.980s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.980s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.980s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.980s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.980s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64'
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.980s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extension 'ignore'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extension 'ignore_ament_install'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extensions ['colcon_pkg']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extension 'colcon_pkg'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extensions ['colcon_meta']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extension 'colcon_meta'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extensions ['ros']
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\custom_interfaces) by extension 'ros'
+[1.039s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src\custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'[0m
+[1.039s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.039s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.039s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.039s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.039s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG', '-G', 'Ninja']'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.108s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': 'C:\\Users\\andre\\Documents\\GitHub\\controls-onboarding-2027\\src\\assets\\matlab_msg_gen_R2026a\\win64\\build\\custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=/MD /Od /Ob2 /DNDEBUG', '-G', 'Ninja'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': 'C:\\Users\\andre\\Documents\\GitHub\\controls-onboarding-2027\\src\\assets\\matlab_msg_gen_R2026a\\win64\\install', 'merge_install': True, 'path': 'C:\\Users\\andre\\Documents\\GitHub\\controls-onboarding-2027\\src\\assets\\matlab_msg_gen_R2026a\\win64\\src\\custom_interfaces', 'symlink_install': False, 'test_result_base': None}[0m
+[1.109s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.120s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.121s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces' with build type 'ament_cmake'
+[1.121s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\src\custom_interfaces'
+[1.130s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.sh': Not used on Windows systems
+[1.131s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.233s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\R2026a\bin\win64\cmake\bin\cmake.EXE --build C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces -- -j16 -l16[0m
+[4.283s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\R2026a\bin\win64\cmake\bin\cmake.EXE --build C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces -- -j16 -l16[0m
+[4.401s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\R2026a\bin\win64\cmake\bin\cmake.EXE --install C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces[0m
+[4.491s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(custom_interfaces)
+[4.493s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(venv) C:\Program Files\MATLAB\R2026a\bin\win64\cmake\bin\cmake.EXE --install C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\build\custom_interfaces[0m
+[4.515s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install' for CMake module files
+[4.519s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install' for CMake config files
+[4.522s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[4.525s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.ps1'
+[4.526s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.bat'
+[4.529s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.dsv'
+[4.531s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\bin'
+[4.531s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'path_dll')
+[4.534s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.ps1'
+[4.535s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.bat'
+[4.536s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.dsv'
+[4.537s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\bin'
+[4.537s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'path')
+[4.542s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.ps1'
+[4.543s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.bat'
+[4.544s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.dsv'
+[4.544s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\lib\pkgconfig\custom_interfaces.pc'
+[4.545s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\Lib\site-packages'
+[4.545s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\Scripts'
+[4.548s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.ps1'
+[4.550s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.bat'
+[4.552s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.dsv'
+[4.553s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\colcon-core\packages\custom_interfaces)
+[4.648s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(custom_interfaces)
+[4.652s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install' for CMake module files
+[4.656s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install' for CMake config files
+[4.659s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[4.661s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.ps1'
+[4.662s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.bat'
+[4.663s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\cmake_prefix_path.dsv'
+[4.664s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\bin'
+[4.664s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'path_dll')
+[4.667s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.ps1'
+[4.667s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.bat'
+[4.668s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path_dll.dsv'
+[4.669s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\bin'
+[4.669s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('custom_interfaces', 'path')
+[4.672s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.ps1'
+[4.673s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.bat'
+[4.674s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\hook\path.dsv'
+[4.675s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\lib\pkgconfig\custom_interfaces.pc'
+[4.675s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\Lib\site-packages'
+[4.675s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\Scripts'
+[4.679s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.ps1'
+[4.680s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.bat'
+[4.681s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\custom_interfaces\package.dsv'
+[4.682s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\share\colcon-core\packages\custom_interfaces)
+[4.683s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[4.683s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[4.697s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[4.697s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify_send': Not used on non-Linux systems
+[4.697s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.697s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'win32'
+[9.736s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[9.741s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\local_setup.ps1'
+[9.764s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\_local_setup_util_ps1.py'
+[9.768s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\setup.ps1'
+[9.774s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\local_setup.bat'
+[9.776s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\_local_setup_util_bat.py'
+[9.777s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script 'C:\Users\andre\Documents\GitHub\controls-onboarding-2027\src\assets\matlab_msg_gen_R2026a\win64\install\setup.bat'

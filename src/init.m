@@ -21,10 +21,10 @@ scene_struct = sceneToStruct(scene);
 %% ROS Msg Setup
 % Run once for setup, or whenever the msg definitions in custom_interfaces
 % are changed.
-% ros2genmsg(prj_path_list.assets_path);
+%ros2genmsg(prj_path_list.assets_path);
 
 % A helpful function to inspect msg contents
-% getCustomRosBus("Sensors");
+getCustomRosBus("Sensors");
 %% Load Constants
 run("constants.m")
 
@@ -37,7 +37,7 @@ dyaw0 = 0; %angular velocity
 X0 = [ri0;dri0;yaw0;dyaw0];
 
 %% Simulation Conditions
-tspan = 10; %(s)
+tspan = 20; %(s)
 dt_sim = 0.001; %(s), simulation fundamental timestep
 dt_data = roundToSimTimestep(1/30, dt_sim); %rate for saving data to plot
 dt_control = roundToSimTimestep(1/100, dt_sim); %update rate for controller
@@ -48,4 +48,4 @@ results = sim("bot_sim.slx");
 plotX(results) %position, velocity, yaw, yaw rate
 plotUlts(results) %ultrasonic sensor measurements
 plotPath(scene,results) %2D trajectory
-makeBotGif(scene,results) 
+makeBotGif(scene,results)

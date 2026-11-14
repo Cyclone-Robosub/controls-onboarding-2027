@@ -1,6 +1,6 @@
 function plotUlts(results)
 try 
-    ults = results.ults;
+    ults= results.ults
 catch
     warning("No variable 'ults' found in results. Skipping plotting.")
 end
