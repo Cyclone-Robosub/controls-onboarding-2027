@@ -9,9 +9,10 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     yaw = state(3);
 
     % Constants
-    turn_limit = pi/3;
+    turn_limit = 5*pi/12;
 
     % Persistent variables
+    persistent prev_turn_direction;
     persistent turn_right;
     persistent prev_mid_distance;
     persistent driving;
@@ -20,6 +21,8 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     persistent target_pos; %[x,y]
     persistent target_yaw; %radians
     persistent t;
+    persistent pass;
+    persistent candidate_waypoint;
 
     % Initialize persistent variables
     if isempty(turn_right)
@@ -54,6 +57,18 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
         at_end = 0;
     end
 
+    if isempty(pass)
+        pass = 0;
+    end
+
+    if isempty(prev_turn_direction)
+        prev_turn_direction = "Right";
+    end
+
+    if isempty(candidate_waypoint)
+        candidate_waypoint = [Inf, Inf];
+    end
+
     if (mid == 0)
         err_pos = 0;
         err_yaw = 0;
@@ -65,36 +80,55 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     end
 
     % Check if there is an opening by seeing if there are sudden jumps in the sensor data 
-    detected_opening = (mid - prev_mid_distance > 2) && (mid - prev_mid_distance < 6.5);
+    detected_opening = (mid - prev_mid_distance > 0.6);
+    
+    if strcmp(prev_turn_direction, "Right")
+        prev = true;
+    else
+        prev = false;
+    end       
+
+    if detected_opening
+        candidate = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y];
+        if(norm(candidate - position) < norm(candidate_waypoint - position) && candidate(1) > x)
+            candidate_waypoint = candidate;
+            disp(candidate_waypoint);
+        end
+    end
+
+    if prev ~= turn_right
+        if turn_right
+            prev_turn_direction = "Right";
+        else
+            prev_turn_direction = "_Left";
+        end
+
+        pass = pass + 1;
+    end
     
     % Want to start driving if there is an opening, or keep driving if we
     % aren't close enough to the target position
-    if(detected_opening || driving)
-        if(~driving) 
+    if((detected_opening && pass == 2) || driving)
+        if(~driving)
+            pass = 0;
             driving = true;
             target_yaw = yaw;
 
-            % Add a little bit of yaw so the target isn't right after the wall
-            if turn_right
-                target_yaw = target_yaw + 0.15;
-            else
-                target_yaw = target_yaw - 0.15;
-            end
-
-            target_pos = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y];
+            target_pos = candidate_waypoint;
+            candidate_waypoint = [Inf, Inf];
 
             % Add or subtract 0.5 to get to the middle of the opening
             if turn_right
-                target_pos(2) = target_pos(2) + 0.5;
+                target_pos(2) = target_pos(2) + 0.2;
             else 
-                target_pos(2) = target_pos(2) - 0.5;
+                target_pos(2) = target_pos(2) - 0.2;
             end
 
         end
         err_yaw = target_yaw - yaw;
         err_pos = norm(target_pos - position);
 
-        if(abs(err_yaw) < 0.3 && err_pos < 0.7)
+        if((abs(err_yaw) < 0.3 && err_pos < 0.8))
             driving = false;
         end
     else
@@ -115,8 +149,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
         end
 
         % Check if we're at the end of the course
-        if((abs(prev_pos(1) - x) <= 0.001 && abs(prev_pos(2) - y) <= 0.001) ...
-                || at_end > 700)
+        if(norm(position - prev_pos) <= 0.001 || at_end > 1650)
             at_end = at_end + 1;
         else
             at_end = 0;
@@ -125,12 +158,17 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     end
 
     % If we're at the end, just move forward
-    if(at_end > 700 && mid > 2)
+    if(at_end > 1650)
         err_yaw = 0;
         err_pos = 1;
     end
 
+    if mid < 2.5
+        err_yaw = 0;
+        err_pos = 0;
+        driving = false;
+    end
+
     prev_pos = [x, y];
     prev_mid_distance = mid;
-
 end

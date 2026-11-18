@@ -14,7 +14,7 @@ robot_transform = load(fullfile(prj_path_list.assets_path,"robot_transform.mat")
 
 %reparent with the current axis
 robot_transform.Parent = ax;
-
+time = text(-1,6,"");
 % get the ultrasonic sensor lines (for trimming to scene bounds)
 ult1_line = findobj(robot_transform,'Tag','ult1');
 ult2_line = findobj(robot_transform,'Tag','ult2');
@@ -45,6 +45,8 @@ percent_text = fprintf("Media is 0.00%% Complete");
 for k = 1:nFrames
     %move the robot 
     robot_transform.Matrix = makehgtform('translate',[xi(k) yi(k) 0],'zrotate', yaw(k));
+
+    time.String = num2str(t(k));
     
     % rotation/translation from body -> world for this frame
     c = cos(yaw(k)); 
