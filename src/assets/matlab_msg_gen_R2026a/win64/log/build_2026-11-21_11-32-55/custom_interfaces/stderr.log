@@ -1,0 +1,28 @@
+CMake Warning in CMakeLists.txt:
+  The object file directory
+
+    C:/Users/andre/Documents/GitHub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/./
+
+  has 191 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    8113447b65535aca030fa96ad2d72b79/sensors__type_support.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in CMakeLists.txt:
+  The object file directory
+
+    C:/Users/andre/Documents/GitHub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/./
+
+  has 193 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    5fd09a25305bfee364c153810a78567d/sensors__type_support.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
