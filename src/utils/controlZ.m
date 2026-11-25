@@ -18,12 +18,14 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     persistent driving;
     persistent at_end;
     persistent prev_pos;
+    persistent prev_yaw;
     persistent target_pos; %[x,y]
     persistent target_yaw; %radians
     persistent t;
     persistent pass;
     persistent candidate_waypoint;
     persistent prev_turn_right;
+    persistent finished;
 
 
     % Initialize persistent variables
@@ -33,6 +35,10 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
 
     if isempty(prev_mid_distance)
         prev_mid_distance = mid;
+    end
+
+    if isempty(prev_yaw)
+        prev_yaw = 0;
     end
 
     if isempty(driving)
@@ -68,11 +74,15 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     end
 
     if isempty(candidate_waypoint)
-        candidate_waypoint = [Inf, Inf];
+        candidate_waypoint = [Inf, Inf, Inf];
     end
     
     if isempty(prev_turn_right)
         prev_turn_right = turn_right;
+    end
+
+    if isempty(finished)
+        finished = false;
     end
 
     if (mid == 0)
@@ -89,11 +99,10 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     detected_opening = (mid - prev_mid_distance > 0.7);    
 
     if detected_opening
-        candidate = [prev_mid_distance * cos(yaw) + x, prev_mid_distance * sin(yaw) + y];
+        candidate = [prev_mid_distance * cos(prev_yaw) + x, prev_mid_distance * sin(prev_yaw) + y, prev_yaw];
        % if(norm(candidate - position) < norm(candidate_waypoint - position) && candidate(1) > x)
         if candidate(1) > x + 0.5
             candidate_waypoint = candidate;
-            disp(candidate_waypoint);
         end
     end
 
@@ -110,10 +119,11 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
         if(~driving)
             pass = 0;
             driving = true;
-            target_yaw = yaw;
 
-            target_pos = candidate_waypoint;
-            candidate_waypoint = [Inf, Inf];
+            target_yaw = candidate_waypoint(3);
+            target_pos = candidate_waypoint(1:2);
+
+            candidate_waypoint = [Inf, Inf, Inf];
 
             % Add or subtract 0.5 to get to the middle of the opening
             if turn_right
@@ -122,11 +132,14 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
                 target_pos(2) = target_pos(2) - 0.3;
             end
 
+            disp([target_pos(1), target_pos(2), rad2deg(target_yaw)]);
+
+
         end
         err_yaw = target_yaw - yaw;
         err_pos = norm(target_pos - position);
 
-        if((abs(err_yaw) < 0.3 && err_pos < 0.8))
+        if((abs(err_yaw) < 0.3 && err_pos < 0.6))
             driving = false;
         end
     else
@@ -147,7 +160,7 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
         end
 
         % Check if we're at the end of the course
-        if(norm(position - prev_pos) <= 0.001 || at_end > 2000)
+        if(norm(position - prev_pos) <= 0.001 || at_end > 1900) && isequal(candidate_waypoint, [Inf, Inf, Inf])
             at_end = at_end + 1;
         else
             at_end = 0;
@@ -156,15 +169,16 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
     end
 
     % If we're at the end, just move forward
-    if(at_end > 2000)
+    if(at_end > 1900)
         err_yaw = 0;
         err_pos = 1;
 
-        if mid < 2.2
+        if mid < 2.3
             err_yaw = 0;
             err_pos = 0;
             driving = false;
-            if at_end <= 2001
+            if ~finished
+                finished = true;
                 disp("REACHED END")
             end
         end
@@ -172,4 +186,5 @@ function [err_pos, err_yaw] = controlZ(sensor_data, state)
 
     prev_pos = [x, y];
     prev_mid_distance = mid;
+    prev_yaw = yaw;
 end

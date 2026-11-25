@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.26100 - AMD64
+The system is: Windows - 10.0.26200 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x64/cl.exe 
 Build flags: 
@@ -48,20 +48,20 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 The CXX compiler identification is MSVC, found in "C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/CMakeScratch/TryCompile-cpcv4e
+Change Dir: C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/CMakeScratch/TryCompile-5d25vr
 
-Run Build Command(s):C:/PROGRA~1/MATLAB/R2026a/toolbox/shared/coder/ninja/win64/ninja.exe cmTC_05f80 && [1/2] Building C object CMakeFiles\cmTC_05f80.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_05f80.exe
+Run Build Command(s):C:/PROGRA~1/MATLAB/R2026a/toolbox/shared/coder/ninja/win64/ninja.exe cmTC_8d93c && [1/2] Building C object CMakeFiles\cmTC_8d93c.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_8d93c.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/CMakeScratch/TryCompile-k81kdz
+Change Dir: C:/Users/linma/Github/Robosub/controls-onboarding-2027/src/assets/matlab_msg_gen_R2026a/win64/build/custom_interfaces/CMakeFiles/CMakeScratch/TryCompile-6x7jtq
 
-Run Build Command(s):C:/PROGRA~1/MATLAB/R2026a/toolbox/shared/coder/ninja/win64/ninja.exe cmTC_646b0 && [1/4] Scanning "C:\Program Files\MATLAB\R2026a\bin\win64\cmake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp" for CXX dependencies
-[2/4] Generating CXX dyndep file CMakeFiles\cmTC_646b0.dir\CXX.dd
-[3/4] Building CXX object CMakeFiles\cmTC_646b0.dir\CMakeCXXCompilerABI.cpp.obj
-[4/4] Linking CXX executable cmTC_646b0.exe
+Run Build Command(s):C:/PROGRA~1/MATLAB/R2026a/toolbox/shared/coder/ninja/win64/ninja.exe cmTC_93176 && [1/4] Scanning "C:\Program Files\MATLAB\R2026a\bin\win64\cmake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp" for CXX dependencies
+[2/4] Generating CXX dyndep file CMakeFiles\cmTC_93176.dir\CXX.dd
+[3/4] Building CXX object CMakeFiles\cmTC_93176.dir\CMakeCXXCompilerABI.cpp.obj
+[4/4] Linking CXX executable cmTC_93176.exe
 
 
 

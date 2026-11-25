@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "custom_interfaces/msg/detail/sensors__functions.h"
-#include "custom_interfaces/msg/detail/sensors__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "custom_interfaces/msg/detail/sensors__struct.h"
 #include "custom_interfaces/msg/detail/sensors__type_support.h"
+#include "custom_interfaces/msg/detail/sensors__functions.h"
 
 #ifdef __cplusplus
 extern "C"

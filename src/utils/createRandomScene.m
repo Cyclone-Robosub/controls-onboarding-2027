@@ -63,5 +63,5 @@ clear barrier_1_gap_y barrier_2_left barrier_1_right barrier_1_x barrier_2_gap_y
     barrier_2_left barrier_2_right barrier_2_x barrier_3_gap_y barrier_3_left...
     barrier_3_right barrier_3_x barrier_dx barrier_gap_dy fig frame frame_width
 
-drawScene(figure(),scene)
+%drawScene(figure(),scene)
 end
